@@ -13,15 +13,15 @@
 
 # 2. Напишите программу, которая принимает на вход пять чисел и находит max из них
 
-ls = list (input ('Введите массив: '))
-def max (a):
-    maxnum = a [0]
-    for i in a:
-        if (maxnum < i):
-            maxnum = i
-    return maxnum
+# ls = list (input ('Введите массив: '))
+# def max (a):
+#     maxnum = a [0]
+#     for i in a:
+#         if (maxnum < i):
+#             maxnum = i
+#     return maxnum
 
-print (f'Результат - {max(ls)}')
+# print (f'Результат - {max(ls)}')
 
 # 3. Напишите программу, которая будет на вход принимать число N и выводить числа от -N до N   
 #     *Примеры:*   
@@ -47,3 +47,11 @@ print (f'Результат - {max(ls)}')
 # B (x1)
 
 # 5. Напишите программу, которая принимает на вход число и проверяет, кратно ли оно 5 и 10 или 15, но не 30.
+
+num = int (input('введите число '))
+def Krat(a):
+    if ((num % 5 == 0 and num % 10 == 0) or num % 15 == 0) and not num % 30 == 0:
+        print (" Да ")
+    else: 
+        print (' Нет ')
+Krat (num)            
