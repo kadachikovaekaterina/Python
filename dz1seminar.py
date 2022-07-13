@@ -7,22 +7,22 @@
 
 DN = int(input('Введите день недели: '))
 
-def W():
-    if DN == 1:
+def W(a):
+    if a == 1:
         print ('Понедельник')
-    elif DN == 2:
+    elif a == 2:
         print ('Вторник')
-    elif DN == 3:
+    elif a == 3:
         print ('Среда')
-    elif DN == 4:
+    elif a == 4:
         print ('Четверг')
-    elif DN == 5:
+    elif a == 5:
         print ('Пятница')
-    elif DN == 6:
-        print ('Суббота')  
-    elif DN == 7:
-        print ('Воскресенье')
-    elif DN<1 or DN>7:
+    elif a == 6:
+        print ('Суббота, выходной, Ура!')  
+    elif a == 7:
+        print ('Воскресенье, выходной, Ура!')
+    elif a<1 or a>7:
         print ('Это не день недели, ты ошибся:)')
 W(DN)
     
